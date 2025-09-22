@@ -22,17 +22,25 @@ export default function App() {
 
   // Default palette
   const defaultPalette = [
-    "#000000", "#ffffff", "#ef4444", "#22c55e", "#3b82f6",
-    "#eab308", "#f97316", "#a855f7", "#ec4899", "#8b5cf6",
-    "#10b981", "#6b7280", "#b91c1c", "#047857", "#1d4ed8"
+    "#000000", "#ffffff", "#ef4444", "#22c55e", 
+    "#035ae6ff", "#eab308", "#f97316", "#59228dff", 
+    "#ce7ea6ff", "#6b7280", "#b91c1c", "#4acbcfff"
   ];
 
   // ===== Symbol mapping (editable in UI) =====
   const [mappings, setMappings] = useState([
     { color: "#ffffff", symbol: " " }, // empty square = empty char
     { color: "#000000", symbol: "+" }, // black square = plus
-    { color: "#ef4444", symbol: "0" }, // red square = 0
+    { color: "#ef4444", symbol: "0" }, // light red square = 0
     { color: "#22c55e", symbol: "1" }, // green square = 1
+    { color: "#035ae6ff", symbol: "2" }, // blue square = 2
+    { color: "#eab308", symbol: "3" }, // yellow square = 3
+    { color: "#f97316", symbol: "4" }, // orange square = 4
+    { color: "#59228dff", symbol: "5" }, // purple square = 5
+    { color: "#ce7ea6ff", symbol: "6" }, // pink square = 6
+    { color: "#6b7280", symbol: "7" }, // grey square = 7
+    { color: "#b91c1c", symbol: "8" }, // dark red square = 8
+    { color: "#4acbcfff", symbol: "9" }, // teal square = 9
   ]);
 
   const colorToSymbol = useMemo(() => {
